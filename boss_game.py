@@ -42,7 +42,7 @@ def check_result(hint_list):
         return True
 
 
-def main():
+def play_boss_game():
     os.system('clear')
     print("Fight with Great Rydz in Hot Cold Warm game")
     print("guess three digits number Great Rydz is thinking of")
@@ -59,7 +59,3 @@ def main():
         tries_left -= 1
     if tries_left == 0:
         return False
-
-
-# if __name__ == '__main__':
-#     main()
