@@ -1,0 +1,15 @@
+MOVE:
+
+W - to UP
+A - to LEFT
+D - to RIGHT
+S - to DOWN
+
+go to "e" to FIGHT with ENEMY
+
+
+
+
+
+
+
