@@ -73,10 +73,6 @@ def add_character_to_board(sign, board, x, y):
 
 
 def add_items_to_board(board, hero_health, hugs):
-    add_character_to_board('e', board, 4, 10)
-    add_character_to_board('e', board, 10, 40)
-    add_character_to_board('e', board, 16, 50)
-    add_character_to_board('e', board, 10, 8)
     if hugs > 30:
         for i in range(5, 10):
             for j in range(60, 65):
@@ -92,8 +88,7 @@ def print_inventory(inventory, hero_health):
 
     print('{}{}'.format("hp = ", hero_health))
     print('{}{}'.format("inventory", inventory_items))
-    # print('_' * 72)
-
+    
 
 def check_lose_game(hero_health):
     if not hero_health:
@@ -110,7 +105,9 @@ def change_position_to_next_level(hugs):
 
 
 def getch():
-    import sys, tty, termios
+    import sys
+    import tty
+    import termios
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
     try:
@@ -151,7 +148,7 @@ def main():
             if random.randint(0, 9) > 7:
                 inventory['Vacuum'] += 1
         elif board_with_characters[x][y] == 'R':
-            if boss_game.main():
+            if boss_game.play_boss_game():
                 screens.display_win_screen(inventory)
             else:
                 screens.print_lose_board()
