@@ -49,7 +49,7 @@ def change_hero_position(x, y, ch, board):
 
 def fight_mode(board, x, y, user_health):
 
-    print('you will fight with enemy in the dice game!!!')
+    # print('you will fight with enemy in the dice game!!!')
     enemy_health = 30
     fight_counter = 0
     while user_health > 0 and enemy_health > 0:
@@ -92,7 +92,7 @@ def print_inventory(inventory, hero_health):
 
     print('{}{}'.format("hp = ", hero_health))
     print('{}{}'.format("inventory", inventory_items))
-    print('_' * 72)
+    # print('_' * 72)
 
 
 def check_lose_game(hero_health):
@@ -148,6 +148,8 @@ def main():
             check_lose_game(hero_health)
             inventory['Hugs'] += 3
             inventory['Tubbies Cream'] += random.randint(0, 2)
+            if random.randint(0, 9) > 7:
+                inventory['Vacuum'] += 1
         elif board_with_characters[x][y] == 'R':
             if boss_game.main():
                 screens.display_win_screen(inventory)
@@ -169,6 +171,7 @@ def main():
             file_name = 'lev2.txt'
             x = 1
             y = 3
+
 
 if __name__ == '__main__':
     main()
