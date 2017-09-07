@@ -4,12 +4,10 @@ import os
 
 def get_random_digits():
     correct_answer = []
-    
     while len(correct_answer) < 3:
         digit = random.randint(0, 9)
         if digit not in correct_answer:
             correct_answer.append(digit)
-    print(correct_answer)
     return correct_answer
 
 
@@ -61,6 +59,7 @@ def main():
         tries_left -= 1
     if tries_left == 0:
         return False
+
 
 if __name__ == '__main__':
     main()
