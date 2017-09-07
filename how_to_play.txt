@@ -1,11 +1,19 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MOVE:
 
 W - to UP
 A - to LEFT
 D - to RIGHT
 S - to DOWN
+__________________________________________________________________________
+go to "e" to FIGHT WITH ENEMY and collect HUGS
 
-go to "e" to FIGHT with ENEMY
+Next level when you collect 14 HUGS
+
+KILL BOSS PLAYING in HOT-WARM-COLD GAME
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 
 

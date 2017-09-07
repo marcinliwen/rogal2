@@ -60,6 +60,14 @@ def display_story():
     go_back_to_menu()
 
 
+def print_lose_board():
+    new_file = open('lose.txt')
+    lose_screen = new_file.read()
+    os.system('clear')
+    print(lose_screen)
+    sys.exit()
+
+
 def display_win_screen(inventory):
     new_file = open('win.txt')
     win_screen = new_file.read()
